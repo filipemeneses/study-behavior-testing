@@ -8,19 +8,15 @@ This would be a developer implementation using the "external" library component 
 
 - `Button.vue`
 
-Is a button that either uses `ButtonA.vue` or `ButtonB.vue`
+Is a button that either uses `ButtonA.vue`, `ButtonB.vue` or `ButtonC.vue`
 
-- `ButtonA.vue`
 
-This would mimic the first version of a component. It emits `click` and has `role="button"`
+| Component     | Event     | Role          | Expected test result |
+| ------------- | --------- | ------------- | -------------------- |
+| `ButtonA.vue` | `click`   | `button`      | ✅                    |
+| `ButtonB.vue` | `myClick` | `button`      | ❌                    |
+| `ButtonC.vue` | `click`   | `changedrole` | ❌                    |
 
-- `ButtonB.vue`
-
-This would mimic the second version of a component. It emits `myClick` and has `role="button"`
-
-- `ButtonC.vue`
-
-This would mimic the third version of a component. It emits `click` and has `role="changedrole"`
 
 - `UsingButtonVueUtilsImplementation.spec.js`
 
@@ -37,7 +33,10 @@ Same as `UsingButtonVueUtilsBehavior.spec.js` but using `testing-library`
 ## Steps
 
 - Run all tests with `ButtonA.vue` in `Button.vue`
+  - Tests must **pass**
 - Run all tests with `ButtonB.vue` in `Button.vue`
-  - Tests must **fail**, but `UsingButtonVueUtilsImplementation.spec` **doesn't fail**
+  - Tests must **fail**
+  > but `UsingButtonVueUtilsImplementation.spec` **doesn't fail**
 - Run all tests with `ButtonC.vue` in `Button.vue`
-  - Tests must **fail**, but `UsingButtonVueUtilsImplementation.spec` **doesn't fail**
+  - Tests must **fail**, 
+  > but `UsingButtonVueUtilsImplementation.spec` **doesn't fail**
