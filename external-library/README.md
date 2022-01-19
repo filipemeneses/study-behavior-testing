@@ -38,5 +38,5 @@ Same as `UsingButtonVueUtilsBehavior.spec.js` but using `testing-library`
   - Tests must **fail**
   > but `UsingButtonVueUtilsImplementation.spec` **doesn't fail**
 - Run all tests with `ButtonC.vue` in `Button.vue`
-  - Tests must **fail**, 
+  - Tests must **fail**
   > but `UsingButtonVueUtilsImplementation.spec` **doesn't fail**

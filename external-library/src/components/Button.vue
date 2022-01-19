@@ -10,9 +10,9 @@ import ButtonB from './ButtonB.vue'
 import ButtonC from './ButtonC.vue'
 
 export default {
-    extends: ButtonA
     // changing any version should make tests fails
     // if it does not fail, it means the test isn't covering
     // component behavior changes
+    extends: ButtonA
 }
 </script>
