@@ -1,0 +1,1 @@
+export const sumConsecutiveNumbersC = (countTo) => (countTo / 2) * (1 + countTo)
