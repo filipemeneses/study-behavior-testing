@@ -32,6 +32,6 @@ To mimic external library
 - Revert corruption and run tests with `B` implementation in `sumConsecutiveNumbers.js`
   - Implementation test will **fail** but **shouldn't**
   - Behavior test will **pass** and **it must**
-- Revert corruption and run tests with `C` implementation in `sumConsecutiveNumbers.js`
+- Run tests with `C` implementation in `sumConsecutiveNumbers.js`
   - Implementation test will **fail** but **shouldn't**
   - Behavior test will **pass** and **it must**
